@@ -3,7 +3,7 @@ A PHP/Laravel wrapper around web3 JavaScript API.
 
 ## Installation
 ``` bash
-composer require ilyasdeckers/web3php
+composer require nawab69/web3php
 ```
 
 ### Further steps for Laravel
@@ -11,12 +11,12 @@ When using Laravel, add the following lines to your `config/app.php`
 ``` php
 'providers' => [
     ...
-    IlyasDeckers\Web3PHP\Providers\Web3PHPServiceProvider::class,
+    Nawab69\Web3PHP\Providers\Web3PHPServiceProvider::class,
     ...
 ],
 'aliases' => [
     ...
-    'Ethereum' => IlyasDeckers\Web3PHP\EthereumFacade::class,
+    'Ethereum' => Nawab69\Web3PHP\EthereumFacade::class,
     ...
 ],
 ```
@@ -40,10 +40,13 @@ print $eth // Prints the account balance in hex.
 ```
 ### PHP
 ``` php
-$eth = new \IlyasDeckers\Web3PHP\Ethereum($url, $port);
+$eth = new \Nawab69\Web3PHP\Ethereum($url, $port);
 $eth = $eth->eth_getBalance('0x8fbb99e9e73cd62bb3adea5365ff0f9d90c9e532', $block='latest', $decode_hex=false);
 
 print $eth // Prints the account balance in hex.
 ```
+
+This is updated version of https://github.com/IlyasDeckers/web3php
+Laravel 8.0 Support added
 
 Full reference: https://github.com/ethereum/wiki/wiki/JavaScript-API#web3js-api-reference
