@@ -1,0 +1,22 @@
+    {
+    "name": "nawab69/web3php",
+    "description": "A simple PHP package to interact with the Ethereum web3 API",
+    "keywords": ["laravel", "web3", "ethereum"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nawab Khairuzzaman Mohammad Kibria",
+            "email": "nawabkhairuzzaman@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "illuminate/support": "~8.0",
+        "illuminate/session": "~8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nawab69\\Web3PHP\\": "src/web3php"
+        }
+    }
+}
